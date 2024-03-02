@@ -25,7 +25,7 @@ module RbTunTap
       [ '/dev/net/tun',
         '/dev/tun',
       ].each do |f|
-        return f if File.exists?(f) # and File.readable?(f)
+        return f if File.exist?(f) # and File.readable?(f)
       end
     end
 

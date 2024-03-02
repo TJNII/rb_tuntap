@@ -62,7 +62,7 @@ static VALUE device_initialize(VALUE self,
   }
 
   /* Validate dev */
-  /* Easier to do in Ruby e.g. File.exists?(dev) */
+  /* Easier to do in Ruby e.g. File.exist?(dev) */
 
   rb_iv_set(self, "@name" , name);
   rb_iv_set(self, "@type" , type);
