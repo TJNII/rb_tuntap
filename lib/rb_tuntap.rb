@@ -27,6 +27,8 @@ module RbTunTap
       ].each do |f|
         return f if File.exist?(f) # and File.readable?(f)
       end
+
+      raise('Unable to detect tun device file')
     end
 
     def addr=(address)
